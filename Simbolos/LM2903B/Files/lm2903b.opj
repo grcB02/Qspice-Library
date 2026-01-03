@@ -1,0 +1,86 @@
+(ExpressProject "LM2903B"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 S018 (3945310)  [5/16/2021]-[01/31/23]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\library\lm2903b.olb"
+        (Type "Schematic Library")))
+    (Allegro Netlist Directory "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "61215")
+    (NoModify)
+    (File ".\lm2903b.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\lm2903b-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\lm2903b-pspicefiles\schematic1\sim1.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lm2903b-pspicefiles\schematic1\sim1.sim"
+        (DisplayName "SCHEMATIC1-sim1")
+        (Type "PSpice Profile")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\lm2903b.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\lm2903b.lib"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (MPSSessionName "a0488729")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\lm2903b.dsn")
+      (Path "Design Resources" ".\lm2903b.dsn" "SCHEMATIC1")
+      (Path "Design Resources" ".\lm2903b.dsn" "Design Cache")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library" ".\library\lm2903b.olb")
+      (Select "Design Resources" ".\lm2903b.dsn"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 280 0 846"))
+      (Tab 0))
+    (Doc
+      (Type "COrPrmBrowserDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 5 1368 24 887"))
+      (Path "C:\MODELING\LM2903B_TI\LM2903B.OLB")
+      (Package "LE_HYST")
+      (PartType "1"))
+    (Doc
+      (Type "COrPrmBrowserDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 5 1368 24 887"))
+      (Path "C:\MODELING\LM2903B_TI\LM2903B.OLB")
+      (Package "LM2903B")
+      (PartType "1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1368 24 887")
+        (Scroll "-117 -8")
+        (Zoom "113")
+        (Occurrence "/"))
+      (Path "C:\MODELING\LM2903B_TI\LM2903B.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (PartMRUSelector
+    (LM2903B
+      (FullPartName "LM2903B.Normal")
+      (LibraryName "C:\MODELING\LM2903B_TI\LM2903B.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "C:\Modeling\LM2903B_ti")
+  (ISPCBBASICLICENSE "false"))
