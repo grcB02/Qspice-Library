@@ -1,0 +1,3 @@
+https://www.mouser.com/catalog/specsheets/Lite-On-LTST-C190GKT.pdf
+
+Símbolo gerado através dos dados da datasheet, seguindo um tutorial do gajo que fez o QSpice
