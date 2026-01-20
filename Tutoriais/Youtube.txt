@@ -1,1 +1,5 @@
+### Importing 3rd Party Models into QSPICE - Qorvo, Inc.
 https://www.youtube.com/watch?v=WGJkZSDY9iA
+
+### Use QSPICE to Create MOSFET, JFET & Diode Models in Minutes - Qorvo, Inc.
+https://www.youtube.com/watch?v=GFJzUgvIVgI
