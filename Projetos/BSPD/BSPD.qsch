@@ -374,28 +374,6 @@
       «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
     »
   »
-  «component (-3300,-14100) 0 0
-    «symbol NMOSB
-      «type: MN»
-      «description: Monolithic N-Channel MOSFET Transistor»
-      «shorted pins: true»
-      «line (100,200) (100,150) 0 0 0x1000000 -1 -1»
-      «line (100,-150) (100,-200) 0 0 0x1000000 -1 -1»
-      «line (-100,150) (-100,-150) 0 0 0x1000000 -1 -1»
-      «line (-100,0) (-200,0) 0 0 0x1000000 -1 -1»
-      «line (100,-150) (-50,-150) 0 0 0x1000000 -1 -1»
-      «line (100,150) (-50,150) 0 0 0x1000000 -1 -1»
-      «line (-50,150) (-50,-150) 0 0 0x1000000 -1 -1»
-      «line (100,0) (-50,0) 0 0 0x1000000 -1 -1»
-      «triangle (-50,0) (45,25) (45,-25) 0 0 0x1000000 0x3000000 -1 -1»
-      «text (200,200) 1 7 0 0x1000000 -1 -1 "Q1"»
-      «text (544,-226) 1 13 0 0x1000000 -1 -1 "NMOS"»
-      «pin (100,200) (0,0) 1 0 0 0x0 -1 "D"»
-      «pin (-200,0) (0,0) 1 0 0 0x0 -1 "G"»
-      «pin (100,-200) (0,0) 1 0 0 0x0 -1 "S"»
-      «pin (100,0) (0,0) 1 0 0 0x0 -1 "B"»
-    »
-  »
   «component (-4200,-14600) 0 0
     «symbol R
       «type: R»
@@ -424,28 +402,6 @@
       «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
     »
   »
-  «component (-1400,-13500) 0 0
-    «symbol NMOSB
-      «type: MN»
-      «description: Monolithic N-Channel MOSFET Transistor»
-      «shorted pins: true»
-      «line (100,200) (100,150) 0 0 0x1000000 -1 -1»
-      «line (100,-150) (100,-200) 0 0 0x1000000 -1 -1»
-      «line (-100,150) (-100,-150) 0 0 0x1000000 -1 -1»
-      «line (-100,0) (-200,0) 0 0 0x1000000 -1 -1»
-      «line (100,-150) (-50,-150) 0 0 0x1000000 -1 -1»
-      «line (100,150) (-50,150) 0 0 0x1000000 -1 -1»
-      «line (-50,150) (-50,-150) 0 0 0x1000000 -1 -1»
-      «line (100,0) (-50,0) 0 0 0x1000000 -1 -1»
-      «triangle (-50,0) (45,25) (45,-25) 0 0 0x1000000 0x3000000 -1 -1»
-      «text (200,200) 1 7 0 0x1000000 -1 -1 "Q2"»
-      «text (544,-226) 1 13 0 0x1000000 -1 -1 "NMOS"»
-      «pin (100,200) (0,0) 1 0 0 0x0 -1 "D"»
-      «pin (-200,0) (0,0) 1 0 0 0x0 -1 "G"»
-      «pin (100,-200) (0,0) 1 0 0 0x0 -1 "S"»
-      «pin (100,0) (0,0) 1 0 0 0x0 -1 "B"»
-    »
-  »
   «component (-800,-12900) 2 0
     «symbol R
       «type: R»
@@ -470,7 +426,7 @@
       «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
       «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
       «text (100,150) 1 7 0 0x1000000 -1 -1 "C28"»
-      «text (100,-150) 1 7 0 0x1000000 -1 -1 "10n"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "10µ"»
       «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
       «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
     »
@@ -850,8 +806,8 @@
       «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
       «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
       «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
-      «text (100,150) 1 7 0 0x1000000 -1 -1 "R3"»
-      «text (100,-150) 1 7 0 0x1000000 -1 -1 "<val>"»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R14"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "10K"»
       «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
       «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
     »
@@ -864,28 +820,13 @@
       «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
       «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
       «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
-      «text (100,150) 1 7 0 0x1000000 -1 -1 "RR"»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R8"»
       «text (100,-150) 1 7 0 0x1000000 -1 -1 "10K"»
       «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
       «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
     »
   »
-  «component (32200,-1400) 0 0
-    «symbol SN74LVC2G17
-      «type: X»
-      «description: Machine generated symbol for SN74LVC2G17»
-      «library file: |.SUBCKT SN74LVC2G17 Y A VCC AGND\nXU1 Y A VCC VCC AGND LOGIC_GATE_2PIN_OD_LVC_1i_AND_PP_ST_SN74LVC2G17\n.ENDS\n.SUBCKT LOGIC_GATE_2PIN_OD_LVC_1i_AND_PP_ST_SN74LVC2G17 OUT A B VCC GND\n.PARAM VCC_ABS_MAX = 6.5\n.PARAM VCC_MAX = 5.5\n.PARAM RA = 220000000\n.PARAM RB = 220000000\n.PARAM CA = 4.5e-12\n.PARAM CB = 4.5e-12\n.PARAM ROEZ = 5500000\n.PARAM COEZ = 6e-12\nRA A GND {RA}\nRB B GND {RB}\nCA A GND {CA}\nCB B GND {CB}\nXUA NA A VCC GND LOGIC_INPUT_LVC_1i_AND_PP_ST_SN74LVC2G17\nXUB NB B VCC GND LOGIC_INPUT_LVC_1i_AND_PP_ST_SN74LVC2G17\nXUG NA NB NOUTG VCC GND LOGIC_FUNCTION_2_LVC_1i_AND_PP_ST_SN74LVC2G17\nXOUTPD NOUTG NOUTTPD VCC GND TPD_LVC_1i_AND_PP_ST_SN74LVC2G17\nXUOUT NOUTTPD NOUT_INT VCC GND LOGIC_PP_OUTPUT_LVC_1i_AND_PP_ST_SN74LVC2G17\nXICC VCC GND NVIOUT LOGIC_ICC_LVC_1i_AND_PP_ST_SN74LVC2G17\nSICC VCC GND VCC GND SW1\nH1 NVIOUT GND VIOUT 1\nVIOUT NOUT_INT OUTsw 0\nSIOFF OUTsw OUT VCC GND SW2\nDA2 GND A D1\nDB2 GND B D1\nDO2 GND OUT D1\nRDA1 NA1 GND 1e6\nSDA1 NA1 A VCC GND SW2\nRDB1 NB1 GND 1e6\nSDB1 NB1 B VCC GND SW2\nRDO1 NO1 GND 1e6\nSDO1 NO1 OUT VCC GND SW2\n.MODEL SW1 VSWITCH VON = {VCC_ABS_MAX} VOFF = {VCC_MAX} RON = 10 ROFF = 60e6\n.MODEL SW2 VSWITCH VON = {0.55} VOFF = {0.45} RON = 10m ROFF = 100e6\n.MODEL D1 D\n.ENDS\n.SUBCKT LOGIC_INPUT_LVC_1i_AND_PP_ST_SN74LVC2G17 OUT IN VCC VEE\n.PARAM STANDARD_INPUT_SELECT = 0\n.PARAM SCHMITT_TRIGGER_INPUT_SELECT = 1\nESTD_THR VSTD_THR VEE TABLE {V(VCC,VEE)} = (1,0.5) (1.8,0.9) (2.5,1.25) (3.3,1.65) (5,2.5) (6,3)\nETRP_P VTRP_P VEE TABLE {V(VCC,VEE)} = (1.65,0.9) (2.3,1.25) (3,1.7) (4.5,2.45) (5.5,3)\nETRP_N VTRP_N VEE TABLE {V(VCC,VEE)} = (1.65,0.45) (2.3,0.7) (3,1.05) (4.5,1.72) (5.5,2.1)\nEHYST VHYST VEE TABLE {V(VCC,VEE)} = (1.65,0.45) (2.3,0.55) (3,0.65) (4.5,0.73) (5.5,0.9)\nETRUE NTRUE VEE VALUE = {V(VCC,VEE)}\nEFALSE NFALSE VEE VALUE = {0}\nEBETA BETA VEE VALUE = {V(VHYST,VEE)/(V(NTRUE,VEE) - V(NFALSE,VEE) + V(VHYST,VEE))}\nEFB NFB VEE VALUE = {(1 - V(BETA,VEE))*V(IN,VEE) + V(BETA,VEE)*V(CURR_OUT,VEE)}\nEREF NREF VEE VALUE = {0.5*(1 - V(BETA,VEE))*(V(VTRP_P,VEE) + V(VTRP_N,VEE)) + 0.5*V(BETA,VEE)*(V(NTRUE,VEE) + V(NFALSE,VEE))}\nEDIFF NDIFF VEE VALUE = {V(NFB,NREF)}\nESWITCH VSWITCH VEE VALUE = {0.5*(-SGN(V(NDIFF,VEE)) + ABS(SGN(V(NDIFF,VEE))))}\nESWITCH1 VSWITCH1 VEE VALUE = {0.5*(SGN(V(NDIFF,VEE)) + ABS(SGN(V(NDIFF,VEE))))}\nGCOMP VEE CURR_OUT VALUE = {SCHMITT_TRIGGER_INPUT_SELECT*0.5*V(VCC,VEE)*(SGN(V(NDIFF,VEE)) + ABS(SGN(V(NDIFF,VEE))))}\nGSTD VEE CURR_OUT VALUE = {STANDARD_INPUT_SELECT*0.5*V(VCC,VEE)*(SGN(V(IN,VSTD_THR)) + ABS(SGN(V(IN,VSTD_THR))))}\nROUT CURR_OUT VEE 1\nEMID MID VEE VALUE = {0.5*(V(VCC,VEE) + V(VEE))}\nEARG NARG VEE VALUE = {V(CURR_OUT,VEE) - V(MID,VEE)}\nEOUT OUT VEE VALUE = {0.5*(SGN(V(NARG,VEE)) + ABS(SGN(V(NARG,VEE) ) ) )}\n.PARAM MAXICC = 0.032\n.PARAM VT = .7\n.PARAM VCC_MIN = 1.65\nEV_VT1 VTN VEE VALUE = { VT }\nEV_VT2 VTP VEE VALUE = { V(VCC,VEE) - VT }\nETEST TEST VEE VALUE = {.9*V(VCC,VEE)}\nEVTHDIFF VTH_DIFF VEE VALUE = {V(IN,VSTD_THR)}\nEVTHPDIFF VTHP_DIFF VEE VALUE = {V(IN,VTRP_P)}\nEVTHNDIFF VTHN_DIFF VEE VALUE = {V(IN,VTRP_N)}\nEVTNDIFF VTN_DIFF VEE VALUE = { V(IN,VTN) }\nEVTPDIFF VTP_DIFF VEE VALUE = { V(IN,VTP) }\nGICCVA VCC VEE VALUE = { (-ABS(( (1+SGN(V(VTN_DIFF,VEE)) ) )/2 -1) * 2*MAXICC*((V(IN,VEE)-VT)/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH,VEE)}\nGICCVB VCC VEE VALUE = { (ABS(( (1+SGN(V(VTHP_DIFF,VEE)) ) )/2 -1) * 2*MAXICC*((V(IN,VEE)-VT)/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH,VEE)}\nGICCVC VCC VEE VALUE = { ( ABS( (1+SGN(V(VTHN_DIFF,VEE)) ) )/2 * 2*MAXICC*((V(IN,VEE)-(V(VCC,VEE)-VT))/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH1,VEE)}\nGICCVD VCC VEE VALUE = { (-ABS( (1+SGN(V(VTP_DIFF,VEE)) ) )/2 * 2*MAXICC*((V(IN,VEE)-(V(VCC,VEE)-VT))/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH1,VEE)}\n.ENDS\n.SUBCKT LOGIC_FUNCTION_2_LVC_1i_AND_PP_ST_SN74LVC2G17 A B OUT VCC VEE\n.PARAM AND = 1\n.PARAM NAND = 0\n.PARAM OR = 0\n.PARAM NOR = 0\n.PARAM XOR = 0\n.PARAM XNOR = 0\nGAND VEE N1 VALUE = {AND*V(A,VEE)*V(B,VEE)}\nGNAND VEE N1 VALUE = {NAND*(1 - V(A,VEE)*V(B,VEE))}\nGOR VEE N1 VALUE = {OR*(MIN(V(A,VEE) + V(B,VEE),1))}\nGNOR VEE N1 VALUE = {NOR*(1 - MIN(V(A,VEE) + V(B,VEE),1))}\nGXOR VEE N1 VALUE = {XOR*((1 - V(A,VEE))*V(B,VEE) + V(A,VEE)*(1 - V(B,VEE)))}\nGXNOR VEE N1 VALUE = {XNOR*(1 - ((1 - V(A,VEE))*V(B,VEE) + V(A,VEE)*(1 - V(B,VEE))))}\nRN1 N1 VEE 1\nEOUT OUT VEE N1 VEE 1\n.ENDS\n.SUBCKT TPD_LVC_1i_AND_PP_ST_SN74LVC2G17 IN OUT VCC VEE\n.PARAM TPDELAY1 = 1N\n.PARAM RS = 10K\n.PARAM CS = {-TPDELAY1/(RS*LOG(0.5))}\nETPDNORM NTPDNORM VEE TABLE {V(VCC,VEE)} = (1.8,4.3) (2.5,2.6) (3.3,2.15) (5,1.95)\nG1 IN N1 VALUE = {V(IN,N1)/(V(NTPDNORM,VEE)*RS)}\nRZ IN N1 10G\nC1 N1 VEE {CS}\nE1 N2 VEE VALUE = {0.5*(1 + SGN(V(N1,VEE) - 0.5))}\nEOUT OUT VEE N2 VEE 1\n.ENDS\n.SUBCKT LOGIC_PP_OUTPUT_LVC_1i_AND_PP_ST_SN74LVC2G17 IN OUT VCC VEE\nEROH NROH VEE TABLE {V(VCC,VEE)} = (1.65,112.5) (2.3,50) (3,37.5) (4.5,21.875)\nEROL NROL VEE TABLE {V(VCC,VEE)} = (1.65,112.5) (2.3,37.5) (3,25) (4.5,17.1875)\nE1 N1 VEE VALUE = {V(VCC,VEE)*V(IN,VEE)}\nGOUT N1 OUT VALUE = {V(N1,OUT)*(V(IN,VEE)/V(NROH,VEE) + (1 - V(IN,VEE))/V(NROL,VEE))}\n.ENDS\n.SUBCKT LOGIC_ICC_LVC_1i_AND_PP_ST_SN74LVC2G17 VCC VEE VIOUT\n.PARAM ICC = 2.5e-07\n.PARAM VCC_MAX = 5.5\n.PARAM VCC_MIN = 1.65\nGICC VCC VEE VALUE = {ICC*0.5*(1 + SGN(V(VCC,VEE) - VCC_MIN))}\nEGNDF GNDF 0 VALUE = {0.5*(V(VCC) + V(VEE))}\nGOUTP VCC GNDF VALUE = {V(VIOUT,VEE)*0.5*(SGN(V(VIOUT,VEE)) + ABS(SGN(V(VIOUT,VEE))))}\nGOUTN GNDF VEE VALUE = {V(VIOUT,VEE)*0.5*(SGN(V(VIOUT,VEE)) + ABS(SGN(V(VIOUT,VEE))))}\n.ENDS»
-      «shorted pins: false»
-      «rect (-1000,-400) (1000,400) 0 0 0 0xff0000 0x4000000 -1 0 -1»
-      «text (50,400) 1 6 0 0x1000000 -1 -1 "X1"»
-      «text (0,0) 1 0 0 0x1000000 -1 -1 "SN74LVC2G17"»
-      «pin (0,400) (0,0) 1 13 0 0x0 -1 "Y"»
-      «pin (-1000,0) (20,0) 1 7 0 0x0 -1 "A"»
-      «pin (0,-400) (0,0) 1 14 0 0x0 -1 "VCC"»
-      «pin (1000,0) (-20,0) 1 11 0 0x0 -1 "AGND"»
-    »
-  »
-  «component (34100,-2700) 0 0
+  «component (37300,-2700) 0 0
     «symbol R
       «type: R»
       «description: Resistor(USA Style Symbol)»
@@ -899,7 +840,7 @@
       «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
     »
   »
-  «component (34100,-4100) 4 0
+  «component (37300,-4100) 4 0
     «symbol LED
       «type: D»
       «description: LED Diode»
@@ -1067,21 +1008,6 @@
       «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
     »
   »
-  «component (4200,-5000) 0 0
-    «symbol SN74LVC2G17
-      «type: X»
-      «description: Machine generated symbol for SN74LVC2G17»
-      «library file: |.SUBCKT SN74LVC2G17 Y A VCC AGND\nXU1 Y A VCC VCC AGND LOGIC_GATE_2PIN_OD_LVC_1i_AND_PP_ST_SN74LVC2G17\n.ENDS\n.SUBCKT LOGIC_GATE_2PIN_OD_LVC_1i_AND_PP_ST_SN74LVC2G17 OUT A B VCC GND\n.PARAM VCC_ABS_MAX = 6.5\n.PARAM VCC_MAX = 5.5\n.PARAM RA = 220000000\n.PARAM RB = 220000000\n.PARAM CA = 4.5e-12\n.PARAM CB = 4.5e-12\n.PARAM ROEZ = 5500000\n.PARAM COEZ = 6e-12\nRA A GND {RA}\nRB B GND {RB}\nCA A GND {CA}\nCB B GND {CB}\nXUA NA A VCC GND LOGIC_INPUT_LVC_1i_AND_PP_ST_SN74LVC2G17\nXUB NB B VCC GND LOGIC_INPUT_LVC_1i_AND_PP_ST_SN74LVC2G17\nXUG NA NB NOUTG VCC GND LOGIC_FUNCTION_2_LVC_1i_AND_PP_ST_SN74LVC2G17\nXOUTPD NOUTG NOUTTPD VCC GND TPD_LVC_1i_AND_PP_ST_SN74LVC2G17\nXUOUT NOUTTPD NOUT_INT VCC GND LOGIC_PP_OUTPUT_LVC_1i_AND_PP_ST_SN74LVC2G17\nXICC VCC GND NVIOUT LOGIC_ICC_LVC_1i_AND_PP_ST_SN74LVC2G17\nSICC VCC GND VCC GND SW1\nH1 NVIOUT GND VIOUT 1\nVIOUT NOUT_INT OUTsw 0\nSIOFF OUTsw OUT VCC GND SW2\nDA2 GND A D1\nDB2 GND B D1\nDO2 GND OUT D1\nRDA1 NA1 GND 1e6\nSDA1 NA1 A VCC GND SW2\nRDB1 NB1 GND 1e6\nSDB1 NB1 B VCC GND SW2\nRDO1 NO1 GND 1e6\nSDO1 NO1 OUT VCC GND SW2\n.MODEL SW1 VSWITCH VON = {VCC_ABS_MAX} VOFF = {VCC_MAX} RON = 10 ROFF = 60e6\n.MODEL SW2 VSWITCH VON = {0.55} VOFF = {0.45} RON = 10m ROFF = 100e6\n.MODEL D1 D\n.ENDS\n.SUBCKT LOGIC_INPUT_LVC_1i_AND_PP_ST_SN74LVC2G17 OUT IN VCC VEE\n.PARAM STANDARD_INPUT_SELECT = 0\n.PARAM SCHMITT_TRIGGER_INPUT_SELECT = 1\nESTD_THR VSTD_THR VEE TABLE {V(VCC,VEE)} = (1,0.5) (1.8,0.9) (2.5,1.25) (3.3,1.65) (5,2.5) (6,3)\nETRP_P VTRP_P VEE TABLE {V(VCC,VEE)} = (1.65,0.9) (2.3,1.25) (3,1.7) (4.5,2.45) (5.5,3)\nETRP_N VTRP_N VEE TABLE {V(VCC,VEE)} = (1.65,0.45) (2.3,0.7) (3,1.05) (4.5,1.72) (5.5,2.1)\nEHYST VHYST VEE TABLE {V(VCC,VEE)} = (1.65,0.45) (2.3,0.55) (3,0.65) (4.5,0.73) (5.5,0.9)\nETRUE NTRUE VEE VALUE = {V(VCC,VEE)}\nEFALSE NFALSE VEE VALUE = {0}\nEBETA BETA VEE VALUE = {V(VHYST,VEE)/(V(NTRUE,VEE) - V(NFALSE,VEE) + V(VHYST,VEE))}\nEFB NFB VEE VALUE = {(1 - V(BETA,VEE))*V(IN,VEE) + V(BETA,VEE)*V(CURR_OUT,VEE)}\nEREF NREF VEE VALUE = {0.5*(1 - V(BETA,VEE))*(V(VTRP_P,VEE) + V(VTRP_N,VEE)) + 0.5*V(BETA,VEE)*(V(NTRUE,VEE) + V(NFALSE,VEE))}\nEDIFF NDIFF VEE VALUE = {V(NFB,NREF)}\nESWITCH VSWITCH VEE VALUE = {0.5*(-SGN(V(NDIFF,VEE)) + ABS(SGN(V(NDIFF,VEE))))}\nESWITCH1 VSWITCH1 VEE VALUE = {0.5*(SGN(V(NDIFF,VEE)) + ABS(SGN(V(NDIFF,VEE))))}\nGCOMP VEE CURR_OUT VALUE = {SCHMITT_TRIGGER_INPUT_SELECT*0.5*V(VCC,VEE)*(SGN(V(NDIFF,VEE)) + ABS(SGN(V(NDIFF,VEE))))}\nGSTD VEE CURR_OUT VALUE = {STANDARD_INPUT_SELECT*0.5*V(VCC,VEE)*(SGN(V(IN,VSTD_THR)) + ABS(SGN(V(IN,VSTD_THR))))}\nROUT CURR_OUT VEE 1\nEMID MID VEE VALUE = {0.5*(V(VCC,VEE) + V(VEE))}\nEARG NARG VEE VALUE = {V(CURR_OUT,VEE) - V(MID,VEE)}\nEOUT OUT VEE VALUE = {0.5*(SGN(V(NARG,VEE)) + ABS(SGN(V(NARG,VEE) ) ) )}\n.PARAM MAXICC = 0.032\n.PARAM VT = .7\n.PARAM VCC_MIN = 1.65\nEV_VT1 VTN VEE VALUE = { VT }\nEV_VT2 VTP VEE VALUE = { V(VCC,VEE) - VT }\nETEST TEST VEE VALUE = {.9*V(VCC,VEE)}\nEVTHDIFF VTH_DIFF VEE VALUE = {V(IN,VSTD_THR)}\nEVTHPDIFF VTHP_DIFF VEE VALUE = {V(IN,VTRP_P)}\nEVTHNDIFF VTHN_DIFF VEE VALUE = {V(IN,VTRP_N)}\nEVTNDIFF VTN_DIFF VEE VALUE = { V(IN,VTN) }\nEVTPDIFF VTP_DIFF VEE VALUE = { V(IN,VTP) }\nGICCVA VCC VEE VALUE = { (-ABS(( (1+SGN(V(VTN_DIFF,VEE)) ) )/2 -1) * 2*MAXICC*((V(IN,VEE)-VT)/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH,VEE)}\nGICCVB VCC VEE VALUE = { (ABS(( (1+SGN(V(VTHP_DIFF,VEE)) ) )/2 -1) * 2*MAXICC*((V(IN,VEE)-VT)/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH,VEE)}\nGICCVC VCC VEE VALUE = { ( ABS( (1+SGN(V(VTHN_DIFF,VEE)) ) )/2 * 2*MAXICC*((V(IN,VEE)-(V(VCC,VEE)-VT))/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH1,VEE)}\nGICCVD VCC VEE VALUE = { (-ABS( (1+SGN(V(VTP_DIFF,VEE)) ) )/2 * 2*MAXICC*((V(IN,VEE)-(V(VCC,VEE)-VT))/V(VCC,VEE))^2)*(1 + SGN(V(VCC,VEE) - VCC_MIN))*V(VSWITCH1,VEE)}\n.ENDS\n.SUBCKT LOGIC_FUNCTION_2_LVC_1i_AND_PP_ST_SN74LVC2G17 A B OUT VCC VEE\n.PARAM AND = 1\n.PARAM NAND = 0\n.PARAM OR = 0\n.PARAM NOR = 0\n.PARAM XOR = 0\n.PARAM XNOR = 0\nGAND VEE N1 VALUE = {AND*V(A,VEE)*V(B,VEE)}\nGNAND VEE N1 VALUE = {NAND*(1 - V(A,VEE)*V(B,VEE))}\nGOR VEE N1 VALUE = {OR*(MIN(V(A,VEE) + V(B,VEE),1))}\nGNOR VEE N1 VALUE = {NOR*(1 - MIN(V(A,VEE) + V(B,VEE),1))}\nGXOR VEE N1 VALUE = {XOR*((1 - V(A,VEE))*V(B,VEE) + V(A,VEE)*(1 - V(B,VEE)))}\nGXNOR VEE N1 VALUE = {XNOR*(1 - ((1 - V(A,VEE))*V(B,VEE) + V(A,VEE)*(1 - V(B,VEE))))}\nRN1 N1 VEE 1\nEOUT OUT VEE N1 VEE 1\n.ENDS\n.SUBCKT TPD_LVC_1i_AND_PP_ST_SN74LVC2G17 IN OUT VCC VEE\n.PARAM TPDELAY1 = 1N\n.PARAM RS = 10K\n.PARAM CS = {-TPDELAY1/(RS*LOG(0.5))}\nETPDNORM NTPDNORM VEE TABLE {V(VCC,VEE)} = (1.8,4.3) (2.5,2.6) (3.3,2.15) (5,1.95)\nG1 IN N1 VALUE = {V(IN,N1)/(V(NTPDNORM,VEE)*RS)}\nRZ IN N1 10G\nC1 N1 VEE {CS}\nE1 N2 VEE VALUE = {0.5*(1 + SGN(V(N1,VEE) - 0.5))}\nEOUT OUT VEE N2 VEE 1\n.ENDS\n.SUBCKT LOGIC_PP_OUTPUT_LVC_1i_AND_PP_ST_SN74LVC2G17 IN OUT VCC VEE\nEROH NROH VEE TABLE {V(VCC,VEE)} = (1.65,112.5) (2.3,50) (3,37.5) (4.5,21.875)\nEROL NROL VEE TABLE {V(VCC,VEE)} = (1.65,112.5) (2.3,37.5) (3,25) (4.5,17.1875)\nE1 N1 VEE VALUE = {V(VCC,VEE)*V(IN,VEE)}\nGOUT N1 OUT VALUE = {V(N1,OUT)*(V(IN,VEE)/V(NROH,VEE) + (1 - V(IN,VEE))/V(NROL,VEE))}\n.ENDS\n.SUBCKT LOGIC_ICC_LVC_1i_AND_PP_ST_SN74LVC2G17 VCC VEE VIOUT\n.PARAM ICC = 2.5e-07\n.PARAM VCC_MAX = 5.5\n.PARAM VCC_MIN = 1.65\nGICC VCC VEE VALUE = {ICC*0.5*(1 + SGN(V(VCC,VEE) - VCC_MIN))}\nEGNDF GNDF 0 VALUE = {0.5*(V(VCC) + V(VEE))}\nGOUTP VCC GNDF VALUE = {V(VIOUT,VEE)*0.5*(SGN(V(VIOUT,VEE)) + ABS(SGN(V(VIOUT,VEE))))}\nGOUTN GNDF VEE VALUE = {V(VIOUT,VEE)*0.5*(SGN(V(VIOUT,VEE)) + ABS(SGN(V(VIOUT,VEE))))}\n.ENDS»
-      «shorted pins: false»
-      «rect (-1000,-400) (1000,400) 0 0 0 0xff0000 0x4000000 -1 0 -1»
-      «text (50,400) 1 6 0 0x1000000 -1 -1 "X2"»
-      «text (-300,0) 1 0 0 0x1000000 -1 -1 "SN74LVC2G17"»
-      «pin (0,400) (0,0) 1 13 0 0x0 -1 "Y"»
-      «pin (-1000,0) (20,0) 1 7 0 0x0 -1 "A"»
-      «pin (0,-400) (0,0) 1 14 0 0x0 -1 "VCC"»
-      «pin (1000,0) (-20,0) 1 11 0 0x0 -1 "AGND"»
-    »
-  »
   «component (27900,-2300) 0 0
     «symbol R
       «type: R»
@@ -1117,7 +1043,7 @@
       «pin (2800,-100) (480,100) 1 11 0 0x0 -1 "AGND"»
     »
   »
-  «component (19900,-8300) 0 0
+  «component (29500,-1900) 0 0
     «symbol SN74LVC1G08
       «type: X»
       «description: Machine generated symbol for SN74LVC1G08»
@@ -1136,6 +1062,122 @@
       «pin (2300,300) (50,0) 1 7 0 0x0 -1 "B"»
       «pin (2800,1100) (330,-110) 1 11 0 0x0 -1 "VCC"»
       «pin (2800,-100) (480,100) 1 11 0 0x0 -1 "AGND"»
+    »
+  »
+  «component (4000,-5000) 0 0
+    «symbol SN74LVC2G17
+      «type: X»
+      «description: Machine generated symbol for SN74LVC2G17»
+      «library file: |.SUBCKT SN74LVC2G17 Y A VCC AGND\nXU1 Y A VCC VCC AGND LOGIC_GATE_2PIN_OD_LVC_1i_AND_PP_ST_SN74LVC2G17\n.ENDS»
+      «shorted pins: false»
+      «line (-250,-50) (-50,-50) 0 0 0x1000000 -1 -1»
+      «line (-150,100) (-150,-50) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (0,-400) 0 0 0x1000000 -1 -1»
+      «line (0,400) (0,150) 0 0 0x1000000 -1 -1»
+      «line (-50,-50) (-50,100) 0 0 0x1000000 -1 -1»
+      «line (-150,100) (50,100) 0 0 0x1000000 -1 -1»
+      «triangle (-400,-300) (-400,300) (400,0) 0 0 0x1000000 0x1000000 -1 -1»
+      «text (200,150) 1 6 0 0x1000000 -1 -1 "X2"»
+      «text (650,-300) 1 0 0 0x1000000 -1 -1 "SN74LVC2G17"»
+      «pin (400,0) (0,0) 1 13 0 0x0 -1 "Y"»
+      «pin (-400,0) (0,0) 1 13 0 0x0 -1 "A"»
+      «pin (0,400) (0,0) 1 14 0 0x0 -1 "VCC"»
+      «pin (0,-400) (-20,0) 1 11 0 0x0 -1 "AGND"»
+    »
+  »
+  «component (35200,-1400) 0 0
+    «symbol SN74LVC2G17
+      «type: X»
+      «description: Machine generated symbol for SN74LVC2G17»
+      «library file: |.SUBCKT SN74LVC2G17 Y A VCC AGND\nXU1 Y A VCC VCC AGND LOGIC_GATE_2PIN_OD_LVC_1i_AND_PP_ST_SN74LVC2G17\n.ENDS»
+      «shorted pins: false»
+      «line (-250,-50) (-50,-50) 0 0 0x1000000 -1 -1»
+      «line (-150,100) (-150,-50) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (0,-400) 0 0 0x1000000 -1 -1»
+      «line (0,400) (0,150) 0 0 0x1000000 -1 -1»
+      «line (-50,-50) (-50,100) 0 0 0x1000000 -1 -1»
+      «line (-150,100) (50,100) 0 0 0x1000000 -1 -1»
+      «triangle (-400,-300) (-400,300) (400,0) 0 0 0x1000000 0x1000000 -1 -1»
+      «text (200,150) 1 6 0 0x1000000 -1 -1 "X5"»
+      «text (650,-300) 1 0 0 0x1000000 -1 -1 "SN74LVC2G17"»
+      «pin (400,0) (0,0) 1 13 0 0x0 -1 "Y"»
+      «pin (-400,0) (0,0) 1 13 0 0x0 -1 "A"»
+      «pin (0,400) (0,0) 1 14 0 0x0 -1 "VCC"»
+      «pin (0,-400) (-20,0) 1 11 0 0x0 -1 "AGND"»
+    »
+  »
+  «component (29700,-12000) 0 0
+    «symbol SN74AHC1G02
+      «type: X»
+      «description: Machine generated symbol for SN74AHC1G02»
+      «library file: |.SUBCKT SN74AHC1G02 Y A B VCC AGND\nXU1 Y A B VCC AGND LOGIC_GATE_2PIN_OD_LVC_2i_NOR_PP_CMOS_SN74AHC1G02\n.ENDS»
+      «shorted pins: false»
+      «line (-800,500) (100,500) 0 0 0x1000000 -1 -1»
+      «line (-800,-400) (100,-400) 0 0 0x1000000 -1 -1»
+      «line (600,0) (900,0) 0 0 0x1000000 -1 -1»
+      «line (-600,400) (-900,400) 0 0 0x1000000 -1 -1»
+      «line (-550,-300) (-850,-300) 0 0 0x1000000 -1 -1»
+      «line (0,-600) (0,-400) 0 0 0x1000000 -1 -1»
+      «line (0,500) (0,700) 0 0 0x1000000 -1 -1»
+      «ellipse (500,-50) (600,50) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «arc3p (100,-400) (500,0) (-350,0) 0 0 0x1000000 -1 -1»
+      «arc3p (500,0) (100,500) (-150,100) 0 0 0x1000000 -1 -1»
+      «arc3p (-800,-400) (-800,500) (-850,-50) 0 0 0x1000000 -1 -1»
+      «text (0,200) 1 15 0 0x1000000 -1 -1 "X6"»
+      «text (900,-250) 1 15 0 0x1000000 -1 -1 "SN74AHC1G02"»
+      «pin (900,0) (20,0) 1 7 0 0x0 -1 "Y"»
+      «pin (-900,400) (-20,-100) 1 7 0 0x0 -1 "A"»
+      «pin (-900,-300) (-10,100) 1 7 0 0x0 -1 "B"»
+      «pin (0,700) (-20,0) 1 11 0 0x0 -1 "VCC"»
+      «pin (0,-600) (-20,0) 1 11 0 0x0 -1 "AGND"»
+    »
+  »
+  «component (-1300,-13500) 0 0
+    «symbol FDN337N
+      «type: X»
+      «description: Machine generated symbol for FDN337N»
+      «library file: |.SUBCKT FDN337N 20 10 30 50\nRg 10 11x 1\nRdu 12x 1 1u\nM1 2 1 4x 4x DMOS L=1u W=1u\n.MODEL DMOS NMOS(VTO=.85 KP=1.94E+1 THETA=.25 VMAX=1.5E5 LEVEL=3)\nCgs 1 5x 387p\nRd 20 4 1.1E-2\nDds 5x 4 DDS\n.MODEL DDS D(M=4.08E-1 VJ=6.51E-1 CJO=329p)\nDbody 5x 20 DBODY\n.MODEL DBODY D(IS=6.52E-10 N=1.177132 RS=5.5E-2 TT=4.5n)\nRa 4 2 1.1E-2\nRs 5x 5 0.5m\nLs 5 30 0.5n\nM2 1 8 6 6 INTER\nE2 8 6 4 1 2\n.MODEL INTER NMOS(VTO=0 KP=10 LEVEL=1)\nCgdmax 7 4 968p\nRcgd 7 4 10meg\nDgd 6 4 DGD\nRdgd 6 4 10meg\n.MODEL DGD D(M=4.05E-1 VJ=2.54E-2 CJO=968p)\nM3 7 9 1 1 INTER\nE3 9 1 4 1 -2\nEOUT 4x 6x poly(2) (1x,0) (3x,0) 0 0 0 0 1\nFCOPY 0 3x VSENSE 1\nRIN 1x 0 1G\nVSENSE 6x 5x 0\nRREF 3x 0 10m\nED 101 0 VALUE {V(50,100)}\nVAMB 100 0 25\nEKP 1x 0 101 0 .028\nEVTO 102 0 101 0 .001\nEVT 12x 11x 102 0 1\nEBL VB1 VB2 101 0 .08\nVBLK VB2 0 30\nD 20 DB1 DBLK\n.MODEL DBLK D(IS=1E-14 CJO=.1p RS=.1)\nEDB DB1 0 VB1 0 1\n.ENDS FDN337N»
+      «shorted pins: false»
+      «line (-400,0) (-150,0) 0 0 0x1000000 -1 -1»
+      «line (-150,-200) (-150,200) 0 0 0x1000000 -1 -1»
+      «line (-100,200) (-100,-200) 0 0 0x1000000 -1 -1»
+      «line (-100,0) (0,0) 0 0 0x1000000 -1 -1»
+      «line (-100,150) (0,150) 0 0 0x1000000 -1 -1»
+      «line (-100,-150) (0,-150) 0 0 0x1000000 -1 -1»
+      «line (0,-300) (0,0) 0 0 0x1000000 -1 -1»
+      «line (0,150) (0,300) 0 0 0x1000000 -1 -1»
+      «triangle (-100,0) (-50,50) (-50,-50) 0 0 0x1000000 0x2000000 -1 -1»
+      «text (50,400) 1 6 0 0x1000000 -1 -1 "X1"»
+      «text (400,100) 1 15 0 0x1000000 -1 -1 "FDN337N"»
+      «text (950,-100) 1 0 0 0x0 -1 -1 "VTemp"»
+      «pin (0,300) (0,0) 1 15 0 0x0 -1 "20"»
+      «pin (-400,0) (20,0) 1 15 0 0x0 -1 "10"»
+      «pin (0,-300) (90,-20) 0.5 15 0 0x0 -1 "30"»
+      «pin (900,0) (90,10) 1 15 0 0x0 -1 "50"»
+    »
+  »
+  «component (-3200,-14100) 0 0
+    «symbol FDN337N
+      «type: X»
+      «description: Machine generated symbol for FDN337N»
+      «library file: |.SUBCKT FDN337N 20 10 30 50\nRg 10 11x 1\nRdu 12x 1 1u\nM1 2 1 4x 4x DMOS L=1u W=1u\n.MODEL DMOS NMOS(VTO=.85 KP=1.94E+1 THETA=.25 VMAX=1.5E5 LEVEL=3)\nCgs 1 5x 387p\nRd 20 4 1.1E-2\nDds 5x 4 DDS\n.MODEL DDS D(M=4.08E-1 VJ=6.51E-1 CJO=329p)\nDbody 5x 20 DBODY\n.MODEL DBODY D(IS=6.52E-10 N=1.177132 RS=5.5E-2 TT=4.5n)\nRa 4 2 1.1E-2\nRs 5x 5 0.5m\nLs 5 30 0.5n\nM2 1 8 6 6 INTER\nE2 8 6 4 1 2\n.MODEL INTER NMOS(VTO=0 KP=10 LEVEL=1)\nCgdmax 7 4 968p\nRcgd 7 4 10meg\nDgd 6 4 DGD\nRdgd 6 4 10meg\n.MODEL DGD D(M=4.05E-1 VJ=2.54E-2 CJO=968p)\nM3 7 9 1 1 INTER\nE3 9 1 4 1 -2\nEOUT 4x 6x poly(2) (1x,0) (3x,0) 0 0 0 0 1\nFCOPY 0 3x VSENSE 1\nRIN 1x 0 1G\nVSENSE 6x 5x 0\nRREF 3x 0 10m\nED 101 0 VALUE {V(50,100)}\nVAMB 100 0 25\nEKP 1x 0 101 0 .028\nEVTO 102 0 101 0 .001\nEVT 12x 11x 102 0 1\nEBL VB1 VB2 101 0 .08\nVBLK VB2 0 30\nD 20 DB1 DBLK\n.MODEL DBLK D(IS=1E-14 CJO=.1p RS=.1)\nEDB DB1 0 VB1 0 1\n.ENDS FDN337N»
+      «shorted pins: false»
+      «line (-400,0) (-150,0) 0 0 0x1000000 -1 -1»
+      «line (-150,-200) (-150,200) 0 0 0x1000000 -1 -1»
+      «line (-100,200) (-100,-200) 0 0 0x1000000 -1 -1»
+      «line (-100,0) (0,0) 0 0 0x1000000 -1 -1»
+      «line (-100,150) (0,150) 0 0 0x1000000 -1 -1»
+      «line (-100,-150) (0,-150) 0 0 0x1000000 -1 -1»
+      «line (0,-300) (0,0) 0 0 0x1000000 -1 -1»
+      «line (0,150) (0,300) 0 0 0x1000000 -1 -1»
+      «triangle (-100,0) (-50,50) (-50,-50) 0 0 0x1000000 0x2000000 -1 -1»
+      «text (50,400) 1 6 0 0x1000000 -1 -1 "X7"»
+      «text (400,100) 1 15 0 0x1000000 -1 -1 "FDN337N"»
+      «text (950,-100) 1 0 0 0x0 -1 -1 "VTemp"»
+      «pin (0,300) (0,0) 1 15 0 0x0 -1 "20"»
+      «pin (-400,0) (20,0) 1 15 0 0x0 -1 "10"»
+      «pin (0,-300) (90,-20) 0.5 15 0 0x0 -1 "30"»
+      «pin (900,0) (90,10) 1 15 0 0x0 -1 "50"»
     »
   »
   «net (-3200,700) 1 13 0 "GND"»
@@ -1172,7 +1214,6 @@
   «net (-4200,-15100) 1 13 0 "GND"»
   «net (-4400,-14100) 1 11 0 "Buffer"»
   «net (-3200,-12600) 1 14 0 "5V"»
-  «net (-1300,-15100) 1 13 0 "GND"»
   «net (-1900,-15100) 1 13 0 "GND"»
   «net (100,-11600) 1 14 0 "5V"»
   «net (100,-15100) 1 13 0 "GND"»
@@ -1204,8 +1245,8 @@
   «net (23500,-2200) 1 14 0 "5V"»
   «net (23500,-4300) 1 13 0 "GND"»
   «net (28200,1700) 1 14 0 "5V"»
-  «net (34700,-1400) 1 7 0 "Implausibility"»
-  «net (34100,-4700) 1 13 0 "GND"»
+  «net (37900,-1400) 1 7 0 "Implausibility"»
+  «net (37300,-4700) 1 13 0 "GND"»
   «net (33000,-14300) 1 13 0 "GND"»
   «net (37500,-11000) 1 14 0 "5V"»
   «net (38600,-12200) 1 7 0 "Buffer"»
@@ -1218,20 +1259,27 @@
   «net (31400,-10400) 1 14 0 "5V"»
   «net (3800,1400) 1 11 0 "BK_Pressure_In"»
   «net (27900,-1600) 1 14 0 "5V"»
-  «net (29300,-2300) 1 13 0 "5V"»
-  «net (30000,-600) 1 13 0 "GND"»
   «net (33900,-12700) 1 11 0 "Buff_Ref"»
   «net (16000,-13200) 1 14 0 "Indicator"»
   «net (6700,-15400) 1 13 0 "GND"»
-  «net (6700,-14200) 1 14 0 "24V"»
+  «net (6700,-14200) 1 14 0 "TV"»
+  «net (4000,-5400) 1 13 0 "GND"»
+  «net (4000,-4200) 1 14 0 "5V"»
+  «net (27900,-11600) 1 11 0 "Implausiblity"»
+  «net (27900,-12300) 1 11 0 "ShortFault"»
+  «net (29700,-12600) 1 13 0 "GND"»
+  «net (29700,-11300) 1 14 0 "5V"»
+  «net (-6200,-1300) 1 14 0 "5V"»
+  «net (-1300,-13800) 1 13 0 "GND"»
   «junction (37500,-12200)»
-  «junction (34100,-1400)»
+  «junction (37300,-1400)»
   «junction (33000,-12000)»
   «junction (33000,-13500)»
   «junction (33000,-14100)»
   «junction (31400,-15300)»
   «junction (30000,-15300)»
   «junction (30000,-16000)»
+  «junction (28800,-12300)»
   «junction (28200,200)»
   «junction (27900,-3200)»
   «junction (25400,0)»
@@ -1247,7 +1295,6 @@
   «junction (6900,-5000)»
   «junction (6300,1400)»
   «junction (5500,1400)»
-  «junction (5200,-5000)»
   «junction (4400,-13300)»
   «junction (2700,-15400)»
   «junction (1400,-5000)»
@@ -1259,18 +1306,22 @@
   «junction (100,-3000)»
   «junction (100,-4200)»
   «junction (100,-5600)»
+  «junction (100,-7000)»
   «junction (100,-12900)»
   «junction (100,-13100)»
-  «junction (-1300,-13700)»
+  «junction (-1300,-13200)»
+  «junction (-1700,-13500)»
   «junction (-1900,-13500)»
   «junction (-2100,1400)»
   «junction (-2500,-3600)»
   «junction (-2600,-8600)»
   «junction (-3200,1400)»
   «junction (-3200,-13500)»
-  «junction (-3200,-14300)»
+  «junction (-3200,-13800)»
+  «junction (-3200,-14400)»
   «junction (-3300,-9700)»
   «junction (-3400,-6800)»
+  «junction (-3600,-14100)»
   «junction (-4200,-14100)»
   «junction (-6200,-2800)»
   «junction (-6200,-4400)»
@@ -1335,25 +1386,21 @@
   «wire (6900,-6900) (6900,-6500) "GND"»
   «wire (8200,-5000) (6900,-5000) "Short_Fault"»
   «wire (-4200,-14800) (-4200,-15100) "GND"»
-  «wire (-3200,-14100) (-3100,-14100) "GND"»
+  «wire (-3200,-15900) (-3100,-15900) "GND"»
   «wire (-3100,-14300) (-3200,-14300) "GND"»
-  «wire (-3100,-14300) (-3100,-14100) "GND"»
-  «wire (-3200,-14300) (-3200,-15100) "GND"»
-  «wire (-3500,-14100) (-4200,-14100) "Buffer"»
+  «wire (-3100,-14300) (-3100,-15900) "GND"»
+  «wire (-3200,-14400) (-3200,-15100) "GND"»
+  «wire (-3600,-14100) (-4200,-14100) "Buffer"»
   «wire (-4200,-14400) (-4200,-14100) "Buffer"»
   «wire (-4200,-14100) (-4400,-14100) "Buffer"»
   «wire (-3200,-12800) (-3200,-12600) "5V"»
   «wire (-3200,-13500) (-3200,-13200) "N06"»
-  «wire (-1900,-13500) (-1600,-13500) "N06"»
-  «wire (-3200,-13900) (-3200,-13500) "N06"»
+  «wire (-1700,-13500) (-1600,-13500) "N06"»
+  «wire (-3200,-13800) (-3200,-13500) "N06"»
   «wire (-1900,-14300) (-1900,-15100) "GND"»
   «wire (-1900,-13900) (-1900,-13500) "N06"»
   «wire (-3200,-13500) (-1900,-13500) "N06"»
-  «wire (-1300,-13700) (-1300,-15100) "GND"»
-  «wire (-1300,-13500) (-1000,-13500) "GND"»
-  «wire (-1000,-13500) (-1000,-13700) "GND"»
-  «wire (-1000,-13700) (-1300,-13700) "GND"»
-  «wire (-1300,-13300) (-1300,-12900) "N07"»
+  «wire (-1300,-13200) (-1300,-12900) "N07"»
   «wire (-600,-12900) (100,-12900) "N08"»
   «wire (-1300,-12900) (-1000,-12900) "N07"»
   «wire (100,-11600) (100,-12100) "5V"»
@@ -1440,26 +1487,20 @@
   «wire (26600,-2800) (26600,-2100) "24V"»
   «wire (26600,-4100) (26600,-3600) "GND"»
   «wire (28200,200) (28500,200) "N18"»
-  «wire (28500,200) (28500,-1300) "N18"»
-  «wire (28500,-1300) (29000,-1300) "N18"»
-  «wire (29000,-1500) (28500,-1500) "N19"»
-  «wire (28500,-1500) (28500,-3200) "N19"»
   «wire (27900,-3200) (27100,-3200) "N19"»
   «wire (28200,1000) (28200,1700) "5V"»
   «wire (27200,200) (28200,200) "N18"»
   «wire (28200,200) (28200,600) "N18"»
-  «wire (29700,-1400) (31200,-1400) "N20"»
-  «wire (34100,-2500) (34100,-1400) "Implausibility"»
-  «wire (34100,-3900) (34100,-2900) "N21"»
-  «wire (34100,-4700) (34100,-4300) "GND"»
-  «wire (34100,-1400) (34700,-1400) "Implausibility"»
-  «wire (34100,-1400) (33200,-1400) "Implausibility"»
-  «wire (30600,-12000) (32000,-12000) "N22"»
-  «wire (33000,-12000) (32400,-12000) "N23"»
-  «wire (34300,-12000) (33000,-12000) "N23"»
-  «wire (33000,-13500) (31900,-13500) "N23"»
-  «wire (33000,-12000) (33000,-13500) "N23"»
-  «wire (34000,-13500) (33000,-13500) "N23"»
+  «wire (37300,-2500) (37300,-1400) "Implausibility"»
+  «wire (37300,-3900) (37300,-2900) "N20"»
+  «wire (37300,-4700) (37300,-4300) "GND"»
+  «wire (37300,-1400) (37900,-1400) "Implausibility"»
+  «wire (30600,-12000) (32000,-12000) "N21"»
+  «wire (33000,-12000) (32400,-12000) "N22"»
+  «wire (34300,-12000) (33000,-12000) "N22"»
+  «wire (33000,-13500) (31900,-13500) "N22"»
+  «wire (33000,-12000) (33000,-13500) "N22"»
+  «wire (34000,-13500) (33000,-13500) "N22"»
   «wire (31900,-13900) (31900,-14100) "GND"»
   «wire (33000,-14100) (34000,-14100) "GND"»
   «wire (34000,-14100) (34000,-13900) "GND"»
@@ -1471,7 +1512,7 @@
   «wire (37500,-11000) (37500,-11400) "5V"»
   «wire (34700,-11800) (34700,-11400) "24V"»
   «wire (34700,-12900) (34700,-12600) "GND"»
-  «wire (30000,-14000) (30000,-14600) "N24"»
+  «wire (30000,-14000) (30000,-14600) "N23"»
   «wire (30000,-15300) (30000,-15600) "Buff_Ref"»
   «wire (30000,-16000) (30000,-16300) "GND"»
   «wire (31400,-16000) (30000,-16000) "GND"»
@@ -1484,14 +1525,7 @@
   «wire (32900,-10700) (32900,-10800) "GND"»
   «wire (32000,-10700) (31400,-10700) "5V"»
   «wire (31400,-10400) (31400,-10700) "5V"»
-  «wire (5200,-5000) (5100,-5000) "Short_Fault"»
-  «wire (6900,-5000) (5200,-5000) "Short_Fault"»
-  «wire (3200,-5000) (1400,-5000) "N04"»
   «wire (27900,-2100) (27900,-1600) "5V"»
-  «wire (29300,-1000) (29300,-400) "GND"»
-  «wire (29300,-400) (30000,-400) "GND"»
-  «wire (30000,-400) (30000,-600) "GND"»
-  «wire (29300,-1800) (29300,-2300) "5V"»
   «wire (34300,-12400) (34000,-12400) "Buff_Ref"»
   «wire (34000,-12400) (34000,-12700) "Buff_Ref"»
   «wire (34000,-12700) (33900,-12700) "Buff_Ref"»
@@ -1499,6 +1533,26 @@
   «wire (28500,-3200) (27900,-3200) "N19"»
   «wire (4400,-13300) (4400,-15000) "N10"»
   «wire (4400,-15000) (6200,-15000) "N10"»
+  «wire (4400,-5000) (6900,-5000) "Short_Fault"»
+  «wire (1400,-5000) (3600,-5000) "N04"»
+  «wire (4000,-4200) (4000,-4600) "5V"»
+  «wire (27900,-11600) (28800,-11600) "Implausiblity"»
+  «wire (28800,-12300) (28900,-12300) "ShortFault"»
+  «wire (27900,-12300) (28800,-12300) "ShortFault"»
+  «wire (35600,-1400) (37300,-1400) "Implausibility"»
+  «wire (32900,-1400) (34800,-1400) "N24"»
+  «wire (31800,-1200) (28500,-1200) "N18"»
+  «wire (28500,200) (28500,-1200) "N18"»
+  «wire (31800,-1600) (28500,-1600) "N19"»
+  «wire (28500,-1600) (28500,-3200) "N19"»
+  «wire (-1000,-9500) (100,-9500) "N03"»
+  «wire (100,-9500) (100,-7000) "N03"»
+  «wire (-6200,-1700) (-6200,-1300) "5V"»
+  «wire (-1900,-13500) (-1700,-13500) "N06"»
+  «wire (-1300,-13300) (-1300,-13200) "N07"»
+  «wire (-3200,-14300) (-3200,-14400) "GND"»
+  «wire (-3500,-14100) (-3600,-14100) "Buffer"»
+  «wire (-3200,-13900) (-3200,-13800) "N06"»
   «text (-9100,1350) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 5m"»
   «text (1800,1950) 1 7 0 0x1000000 -1 -1 "ï»¿Sensors IN\n"»
   «text (-3250,-1650) 1 7 0 0x1000000 -1 -1 "ï»¿Short Check"»
@@ -1506,5 +1560,6 @@
   «text (14800,-11900) 1 7 0 0x1000000 -1 -1 "ï»¿Shutdown Relay"»
   «text (24850,2700) 1 7 0 0x1000000 -1 -1 "ï»¿Pressure and Current Monitoring"»
   «text (28350,-9600) 1 7 0 0x1000000 -1 -1 "ï»¿500ms Buffer"»
+  «text (12750,-4000) 1 7 0 0x1000000 -1 -1 "ï»¿Power Conversion"»
 »
 
