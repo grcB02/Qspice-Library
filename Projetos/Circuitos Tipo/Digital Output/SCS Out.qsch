@@ -1,0 +1,167 @@
+ÿØÿÛ«schematic
+  «component (-500,-500) 0 0
+    «symbol FDN337N
+      «type: X»
+      «description: Machine generated symbol for FDN337N»
+      «library file: |.SUBCKT FDN337N 20 10 30 50\nRg 10 11x 1\nRdu 12x 1 1u\nM1 2 1 4x 4x DMOS L=1u W=1u\n.MODEL DMOS NMOS(VTO=.85 KP=1.94E+1 THETA=.25 VMAX=1.5E5 LEVEL=3)\nCgs 1 5x 387p\nRd 20 4 1.1E-2\nDds 5x 4 DDS\n.MODEL DDS D(M=4.08E-1 VJ=6.51E-1 CJO=329p)\nDbody 5x 20 DBODY\n.MODEL DBODY D(IS=6.52E-10 N=1.177132 RS=5.5E-2 TT=4.5n)\nRa 4 2 1.1E-2\nRs 5x 5 0.5m\nLs 5 30 0.5n\nM2 1 8 6 6 INTER\nE2 8 6 4 1 2\n.MODEL INTER NMOS(VTO=0 KP=10 LEVEL=1)\nCgdmax 7 4 968p\nRcgd 7 4 10meg\nDgd 6 4 DGD\nRdgd 6 4 10meg\n.MODEL DGD D(M=4.05E-1 VJ=2.54E-2 CJO=968p)\nM3 7 9 1 1 INTER\nE3 9 1 4 1 -2\nEOUT 4x 6x poly(2) (1x,0) (3x,0) 0 0 0 0 1\nFCOPY 0 3x VSENSE 1\nRIN 1x 0 1G\nVSENSE 6x 5x 0\nRREF 3x 0 10m\nED 101 0 VALUE {V(50,100)}\nVAMB 100 0 25\nEKP 1x 0 101 0 .028\nEVTO 102 0 101 0 .001\nEVT 12x 11x 102 0 1\nEBL VB1 VB2 101 0 .08\nVBLK VB2 0 30\nD 20 DB1 DBLK\n.MODEL DBLK D(IS=1E-14 CJO=.1p RS=.1)\nEDB DB1 0 VB1 0 1\n.ENDS FDN337N»
+      «shorted pins: false»
+      «line (-600,100) (-200,100) 0 0 0x1000000 -1 -1»
+      «line (-200,-100) (-200,300) 0 0 0x1000000 -1 -1»
+      «line (0,500) (0,250) 0 0 0x1000000 -1 -1»
+      «line (0,250) (-100,250) 0 0 0x1000000 -1 -1»
+      «line (0,-300) (0,100) 0 0 0x1000000 -1 -1»
+      «line (0,-50) (-100,-50) 0 0 0x1000000 -1 -1»
+      «line (-100,-100) (-100,300) 0 0 0x1000000 -1 -1»
+      «line (0,100) (-100,100) 0 0 0x1000000 -1 -1»
+      «line (-50,150) (-100,100) 0 0 0x1000000 -1 -1»
+      «line (-100,100) (-50,50) 0 0 0x1000000 -1 -1»
+      «line (-50,50) (-50,150) 0 0 0x1000000 -1 -1»
+      «text (50,500) 1 6 0 0x1000000 -1 -1 "X1"»
+      «text (400,-150) 1 0 0 0x1000000 -1 -1 "FDN337N"»
+      «pin (0,500) (0,0) 1 15 0 0x0 -1 "20"»
+      «pin (-600,100) (20,0) 1 15 0 0x0 -1 "10"»
+      «pin (0,-300) (0,0) 1 15 0 0x0 -1 "30"»
+      «pin (600,100) (-20,0) 1 15 0 0x0 -1 "50"»
+    »
+  »
+  «component (-500,500) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R1"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "10"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-500,1400) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R2"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "10"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-500,2300) 0 0
+    «symbol
+      «type: X»
+      «description: Machine generated symbol for FDN340P»
+      «library file: |.SUBCKT FDN340P 20 10 30 50\nRg 10 11x 1\nRdu 12x 1 1u\nM1 2 1 4x 4x DMOS L=1u W=1u\n.MODEL DMOS PMOS(VTO=-0.65 KP=9.8 THETA=0.25 VMAX=9.5E5 LEVEL=3)\nCgs 1 5x 650p\nRd 20 4 5E-3\nDds 4 5x DDS\n.MODEL DDS D(M=3.99E-1 VJ=6.01E-1 CJO=201p)\nDbody 20 5x DBODY\n.MODEL DBODY D(IS=3.13E-10 N=1.204268 RS=.001267 TT=10.87n)\nRa 4 2 5E-3\nRs 5x 5 0.5m\nLs 5 30 0.5n\nM2 1 8 6 6 INTER\nE2 8 6 4 1 2\n.MODEL INTER PMOS(VTO=0 KP=10 LEVEL=1)\nCgdmax 7 4 838p\nRcgd 7 4 10meg\nDgd 4 6 DGD\nRdgd 4 6 10meg\n.MODEL DGD D(M=3.92E-1 VJ=1.1E-2 CJO=838p)\nM3 7 9 1 1 INTER\nE3 9 1 4 1 -2\nEOUT 4x 6x poly(2) (1x,0) (3x,0) 0 0 0 0 1\nFCOPY 0 3x VSENSE 1\nRIN 1x 0 1G\nVSENSE 6x 5x 0\nRREF 3x 0 10m\nED 101 0 VALUE {V(50,100)}\nVAMB 100 0 25\nEKP 1x 0 101 0 .015\nEVTO 102 0 101 0 .001\nEVT 11x 12x 102 0 1\nEBL VB1 VB2 101 0 .08\nVBLK VB2 0 20\nD DB1 20 DBLK\n.MODEL DBLK D(IS=1E-14 CJO=.1p RS=.1)\nEDB 0 DB1 VB1 0 1\n.ENDS FDN340P»
+      «shorted pins: false»
+      «line (0,400) (0,0) 0 0 0x1000000 -1 -1»
+      «line (0,-400) (0,-150) 0 0 0x1000000 -1 -1»
+      «line (-100,-200) (-100,200) 0 0 0x1000000 -1 -1»
+      «line (-200,-200) (-200,200) 0 0 0x1000000 -1 -1»
+      «line (-200,0) (-600,0) 0 0 0x1000000 -1 -1»
+      «line (0,0) (-100,0) 0 0 0x1000000 -1 -1»
+      «line (-100,150) (0,150) 0 0 0x1000000 -1 -1»
+      «line (0,-150) (-100,-150) 0 0 0x1000000 -1 -1»
+      «line (0,0) (-50,50) 0 0 0x1000000 -1 -1»
+      «line (-50,50) (-50,-50) 0 0 0x1000000 -1 -1»
+      «line (-50,-50) (0,0) 0 0 0x1000000 -1 -1»
+      «text (50,400) 1 6 0 0x1000000 -1 -1 "X2"»
+      «text (400,-150) 1 0 0 0x1000000 -1 -1 "FDN340P"»
+      «pin (0,-400) (250,-50) 1 15 0 0x0 -1 "20"»
+      «pin (-600,0) (20,0) 1 15 0 0x0 -1 "10"»
+      «pin (0,400) (0,0) 1 15 0 0x0 -1 "30"»
+      «pin (600,0) (-20,0) 1 15 0 0x0 -1 "50"»
+    »
+  »
+  «component (-2100,3700) 0 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "V1"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "5V"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-3400,600) 0 0
+    «symbol V
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "V2"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "sine 2.5 5 1"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-2600,900) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R3"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "100K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (-2000,500) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R4"»
+      «text (-550,-200) 1 7 0 0x1000000 -1 -1 "100K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «net (-500,-1500) 1 13 0 "GND"»
+  «net (-2100,3500) 1 13 0 "GND"»
+  «net (-3400,400) 1 13 0 "GND"»
+  «net (-2000,100) 1 13 0 "GND"»
+  «junction (-1600,900)»
+  «junction (-2000,900)»
+  «wire (-500,1900) (-500,1600) "N01"»
+  «wire (-500,300) (-500,0) "N02"»
+  «wire (-2100,3900) (-2100,4000) "N03"»
+  «wire (-2100,4000) (-500,4000) "N03"»
+  «wire (-500,4000) (-500,2700) "N03"»
+  «wire (-1100,2300) (-1600,2300) "N04"»
+  «wire (-1600,-400) (-1100,-400) "N04"»
+  «wire (-3400,800) (-3400,900) "N05"»
+  «wire (-1600,900) (-1600,-400) "N04"»
+  «wire (-3400,900) (-2800,900) "N05"»
+  «wire (-2000,900) (-1600,900) "N04"»
+  «wire (-1600,2300) (-1600,900) "N04"»
+  «wire (-2000,300) (-2000,100) "GND"»
+  «wire (-2400,900) (-2000,900) "N04"»
+  «wire (-2000,900) (-2000,700) "N04"»
+  «wire (-500,1200) (-500,700) "N06"»
+  «wire (-500,-1500) (-500,-800) "GND"»
+  «text (-4800,1900) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 1"»
+»
+
