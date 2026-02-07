@@ -1,0 +1,23 @@
+ÿØÿÛ«symbol
+  «type: X»
+  «description: Machine generated symbol for FDN340P»
+  «library file: |.SUBCKT FDN340P 20 10 30 50\nRg 10 11x 1\nRdu 12x 1 1u\nM1 2 1 4x 4x DMOS L=1u W=1u\n.MODEL DMOS PMOS(VTO=-0.65 KP=9.8 THETA=0.25 VMAX=9.5E5 LEVEL=3)\nCgs 1 5x 650p\nRd 20 4 5E-3\nDds 4 5x DDS\n.MODEL DDS D(M=3.99E-1 VJ=6.01E-1 CJO=201p)\nDbody 20 5x DBODY\n.MODEL DBODY D(IS=3.13E-10 N=1.204268 RS=.001267 TT=10.87n)\nRa 4 2 5E-3\nRs 5x 5 0.5m\nLs 5 30 0.5n\nM2 1 8 6 6 INTER\nE2 8 6 4 1 2\n.MODEL INTER PMOS(VTO=0 KP=10 LEVEL=1)\nCgdmax 7 4 838p\nRcgd 7 4 10meg\nDgd 4 6 DGD\nRdgd 4 6 10meg\n.MODEL DGD D(M=3.92E-1 VJ=1.1E-2 CJO=838p)\nM3 7 9 1 1 INTER\nE3 9 1 4 1 -2\nEOUT 4x 6x poly(2) (1x,0) (3x,0) 0 0 0 0 1\nFCOPY 0 3x VSENSE 1\nRIN 1x 0 1G\nVSENSE 6x 5x 0\nRREF 3x 0 10m\nED 101 0 VALUE {V(50,100)}\nVAMB 100 0 25\nEKP 1x 0 101 0 .015\nEVTO 102 0 101 0 .001\nEVT 11x 12x 102 0 1\nEBL VB1 VB2 101 0 .08\nVBLK VB2 0 20\nD DB1 20 DBLK\n.MODEL DBLK D(IS=1E-14 CJO=.1p RS=.1)\nEDB 0 DB1 VB1 0 1\n.ENDS FDN340P»
+  «shorted pins: false»
+  «line (0,400) (0,0) 0 0 0x1000000 -1 -1»
+  «line (0,-400) (0,-150) 0 0 0x1000000 -1 -1»
+  «line (-100,-200) (-100,200) 0 0 0x1000000 -1 -1»
+  «line (-200,-200) (-200,200) 0 0 0x1000000 -1 -1»
+  «line (-200,0) (-600,0) 0 0 0x1000000 -1 -1»
+  «line (0,0) (-100,0) 0 0 0x1000000 -1 -1»
+  «line (-100,150) (0,150) 0 0 0x1000000 -1 -1»
+  «line (0,-150) (-100,-150) 0 0 0x1000000 -1 -1»
+  «line (0,0) (-50,50) 0 0 0x1000000 -1 -1»
+  «line (-50,50) (-50,-50) 0 0 0x1000000 -1 -1»
+  «line (-50,-50) (0,0) 0 0 0x1000000 -1 -1»
+  «text (50,400) 1 6 0 0x1000000 -1 -1 "X1"»
+  «text (950,150) 1 0 0 0x1000000 -1 -1 "FDN340P"»
+  «pin (0,-400) (250,-50) 1 15 0 0x0 -1 "20"»
+  «pin (-600,0) (20,0) 1 15 0 0x0 -1 "10"»
+  «pin (0,400) (0,0) 1 15 0 0x0 -1 "30"»
+  «pin (600,0) (-20,0) 1 15 0 0x0 -1 "50"»
+»
