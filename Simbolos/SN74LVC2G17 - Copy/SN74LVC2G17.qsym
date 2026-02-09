@@ -1,0 +1,19 @@
+ÿØÿÛ«symbol SN74LVC2G17
+  «type: X»
+  «description: Machine generated symbol for SN74LVC2G17»
+  «library file: |.SUBCKT SN74LVC2G17 Y A VCC AGND\nBE1 Y_int 0 V={V(VCC)} * (IF(V(A) > 0.6*V(VCC), 1, IF(V(A) < 0.4*V(VCC), 0, V(Y_int))))\nR1 Y_int Y 10\nC1 Y 0 5p\n.ENDS»
+  «shorted pins: false»
+  «line (-250,-50) (-50,-50) 0 0 0x1000000 -1 -1»
+  «line (-150,100) (-150,-50) 0 0 0x1000000 -1 -1»
+  «line (0,-150) (0,-400) 0 0 0x1000000 -1 -1»
+  «line (0,400) (0,150) 0 0 0x1000000 -1 -1»
+  «line (-50,-50) (-50,100) 0 0 0x1000000 -1 -1»
+  «line (-150,100) (50,100) 0 0 0x1000000 -1 -1»
+  «triangle (-400,-300) (-400,300) (400,0) 0 0 0x1000000 0x1000000 -1 -1»
+  «text (100,150) 1 6 0 0x1000000 -1 -1 "X1"»
+  «text (650,-300) 1 0 0 0x1000000 -1 -1 "SN74LVC2G17"»
+  «pin (400,0) (-210,100) 1 13 0 0x0 -1 "Y"»
+  «pin (-400,0) (20,0) 1 7 0 0x0 -1 "A"»
+  «pin (0,400) (0,0) 1 14 0 0x0 -1 "VCC"»
+  «pin (0,-400) (-20,0) 1 11 0 0x0 -1 "AGND"»
+»

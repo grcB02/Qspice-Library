@@ -1,0 +1,284 @@
+ÿØÿÛ«schematic
+  «component (11000,-2700) 2 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (80,0) 1 110 0 0x1000000 -1 -1 "R19"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "1kk"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (9300,-1500) 2 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (130,0) 1 110 0 0x1000000 -1 -1 "C23"»
+      «text (-130,0) 1 109 0 0x1000000 -1 -1 "0.1µ"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (13500,-3700) 0 0
+    «symbol LM2903B
+      «type: X»
+      «description: Machine generated symbol for LM2903B»
+      «library file: |.SUBCKT LM2903B IN+ IN- VCC GND OUT\nR_RIS N859943 VCC 1u TC=0,0\nI_IBN IN- GND DC -3.5n\nX_U5 N859997 GND N860457 0 V+_BUFFER V-_BUFFER VCC N860405 OUT Output_Stage\nX_U4 N860391 N860397 Prop_Delay\nX_U2 IN-BUFF IN+BUFF N860457 V+_BUFFER V-_BUFFER INPUTRANGE\nC_CINNL GND IN- 0.5p TC=0,0\nX_U6 GND V+_BUFFER V-_BUFFER VCC Supply_Buffer\nX_U1 IN+ IN+BUFF IN- IN-BUFF Input_Buffer\nI_IBP IN+ GND DC -3.5n\nC_CINPH IN+ VCC 0.5p TC=0,0\nX_U7 N859997 0 V+_BUFFER V-_BUFFER Supply_Enable\nE_E1 N860405 V-_BUFFER N860397 V-_BUFFER 2\nI_IS N859943 GND DC 275u\nC_CINPL GND IN+ 0.5p TC=0,0\nC_CINNH IN- VCC 0.5p TC=0,0\nX_U3 N860177 IN-BUFF N860391 V+_BUFFER V-_BUFFER N860477 HPA_COMPHYS\nV_VOS N860177 IN+BUFF 0.37m\nV_VHYST N860477 0 0\nX_DESD3 GND IN+ DESD PARAMS: AREA=1.0\nX_DESD5 GND IN- DESD PARAMS: AREA=1.0\n.ENDS\n.SUBCKT Supply_Enable EN POR V+_BUFFER V-_BUFFER\nV_VS_MIN_SET N780252 0 1.99\nX_U13 V+_BUFFER V-_BUFFER N780066 1V 0 Difference\nX_U16 N780086 POR EN 1V 0 ORGATE\nV_VS_MAX_SET N779976 0 36.01\nV_VLOGIC 1V 0 1\nX_U15 N780252 N780066 POR 1V 0 VCC_Range\nX_U5 N780066 N779976 N780086 1V 0 VCC_Range\n.ENDS\n.SUBCKT Input_Buffer IN+ IN+_BUFF IN- IN-_BUFF\nX_U1 IN+ IN- IN+_BUFF IN-_BUFF SUPPLY_BUFFER1\n.ENDS\n.SUBCKT Supply_Buffer GND V+_BUFFER V-_BUFFER Vcc\nX_U1 VCC GND V+_BUFFER V-_BUFFER SUPPLY_BUFFER1\n.ENDS\n.SUBCKT INPUTRANGE INN INP INRANGE V+_BUFFER V-_BUFFER\nV_VCMNN N20539 V-_BUFFER -110m\nX_U1 N20155 INP N20826 V+_BUFFER V-_BUFFER VINRANGE_393\nX_U21 N202710 INN N20833 V+_BUFFER V-_BUFFER VINRANGE_393\nX_U22 INP N20415 N20840 V+_BUFFER V-_BUFFER VINRANGE_393\nX_U23 INN N20539 N20531 V+_BUFFER V-_BUFFER VINRANGE_393\nV_VCMPN N202710 V+_BUFFER -2\nV_VCMNP N20415 V-_BUFFER -110m\nV_VCMPP N20155 V+_BUFFER -2\nX_U24 N20826 N20833 N20840 N20531 INRANGE V+_BUFFER V-_BUFFER 4ORGATE\n.ENDS\n.SUBCKT Prop_Delay VIN VOUT\nR_RS N03175 VIN 50 TC=0,0\nT_TPD N03175 0 VOUT 0 Z0=50 TD=1u\nR_RT 0 VOUT 50 TC=0,0\n.ENDS\n.SUBCKT Output_Stage EN GND IN_RANGE POR V+_BUFFER V-_BUFFER Vcc VIN VOUT\nX_SVOL N774212 N774290 GND N850209 Output_Stage_SVOL\nX_U7 MID V+_BUFFER V-_BUFFER MID_SUPPLY\nC_COUTL GND VOUT 0.5p TC=0,0\nX_SMID CONTROL_MID 0 N778484 MID Output_Stage_SMID\nX_U9 CONTROL_HIZ N789513 1V 0 INVERTER\nX_U3 VIN N774212 V+_BUFFER V-_BUFFER VCC N774290 DIGLEVSHIFT\nC_COUTH VOUT VCC 0.5p TC=0,0\nX_SHIZ CONTROL_HIZ 0 N778484 N778496 Output_Stage_SHIZ\nV_VLOGIC 1V 0 1\nV_V1 VCC N774290 1\nX_U10 N789513 POR CONTROL_MID 1V 0 ORGATE\nR_ROUTL N850209 N778496 60 TC=0,0\nX_U8 POR IN_RANGE EN EN CONTROL_HIZ 1V 0 4ORGATE\nL_L1 N778484 VOUT 1n\n.ENDS\n.subckt Output_Stage_SVOL 1 2 3 4\nS_SVOL 3 4 1 2 _SVOL\nRS_SVOL 1 2 1G\n.MODEL _SVOL VSWITCH Roff=1e12 Ron=1.0 Voff=1 Von=0\n.ends Output_Stage_SVOL\n.subckt Output_Stage_SMID 1 2 3 4\nS_SMID 3 4 1 2 _SMID\nRS_SMID 1 2 1G\n.MODEL _SMID VSWITCH Roff=1e12 Ron=1.0 Voff=1 Von=0\n.ends Output_Stage_SMID\n.subckt Output_Stage_SHIZ 1 2 3 4\nS_SHIZ 3 4 1 2 _SHIZ\nRS_SHIZ 1 2 1G\n.MODEL _SHIZ VSWITCH Roff=1e12 Ron=1.0 Voff=1 Von=0\n.ends Output_Stage_SHIZ\n.SUBCKT HPA_COMPHYS INP INN OUT_OUT VDD VSS VHYS\nEVMID VMID 0 VALUE = { ( V(VDD) + V(VSS) )/2 }\nEVH VH 0 VALUE = { ( V(VHYS)/2) }\nEINNNEW INNNEW 0 VALUE = { IF( ( V(OUT_OUT) < V(VMID) ),(V(INN) + (V(VH))),( V(INN) - V(VH) ) ) }\nEOUT OUT 0 VALUE = { IF( ( V(INP) > V(INNNEW) ), V(VDD), V(VSS) ) }\nR1 OUT OUT_OUT 1\nC1 OUT_OUT 0 1e-12\n.ENDS\n.SUBCKT DIGLEVSHIFT 1 2 VDD_OLD VSS_OLD VDD_NEW VSS_NEW\nE1 3 0 VALUE = { IF( V(1) < 1, V(VSS_NEW), V(VDD_NEW) ) }\nR1 3 2 1\n.ENDS\n.SUBCKT INVERTER 1 2 VDD VSS\nE2 2 0 VALUE = { IF( V(1)> (V(VDD)+V(VSS))/2, V(VSS), V(VDD) ) }\nC1 1 0 1e-12\n.ENDS\n.SUBCKT MID_SUPPLY OUT VDD VSS\nEVMID VMID 0 VALUE = { ( V(VDD) + V(VSS) )/2 }\nEOUT OUT 0 VALUE = {V(VMID)}\n.ENDS\n.SUBCKT ORGATE 1 2 3 VDD VSS\nE1 4 0 VALUE = { IF( ((V(1)< (V(VDD)+V(VSS))/2 ) & (V(2)< (V(VDD)+V(VSS))/2 )), V(VSS), V(VDD) ) }\nR1 4 3 1\nC1 3 0 1e-12\n.ENDS\n.SUBCKT Difference 1 2 OUT VDD VSS\nEOUT OUT1 0 VALUE = { V(1)- V(2)}\nR1 OUT1 OUT 1\n.ENDS\n.SUBCKT SUPPLY_BUFFER1 1 2 VDD_NEW VSS_NEW\nEVDD_NEW VDD_NEW 0 VALUE = {V(1)}\nEVSS_NEW VSS_NEW 0 VALUE = {V(2)}\n.ENDS\n.SUBCKT VCC_Range 1 2 OUT VDD VSS\nEOUT OUT2 0 VALUE = { IF( ( V(1) >= V(2) ), V(VDD), V(VSS) ) }\nR1 OUT OUT2 1\nC1 OUT 0 1e-12\n.ENDS\n.SUBCKT VINRANGE_393 1 2 OUT VDD VSS\nEOUT OUT2 0 VALUE = { IF( ( V(1) >= V(2) ), V(VSS), V(VDD) ) }\nR1 OUT2 OUT 1\nC1 OUT 0 1e-12\n.ENDS\n.SUBCKT 4ORGATE 1 2 3 4 5 VDD VSS\nE1 6 0 VALUE = { IF( ((V(1)> (V(VDD)+V(VSS))/2 ) | (V(2)> (V(VDD)+V(VSS))/2 ) | (V(3)> (V(VDD)+V(VSS))/2 ) | (V(4)> (V(VDD)+V(VSS))/2 )), V(VDD), V(VSS) ) }\nR1 5 6 1\n.ENDS\n.subckt DESD AN CAT params: AREA=1.0 IS=10f RS=5 BV=100\nD_DESD AN CAT model22 {area}\n.model model22 d is={IS} rs={RS} bv={BV}\n.ends DESD»
+      «shorted pins: false»
+      «line (0,1200) (0,400) 0 0 0x1000000 -1 -1»
+      «triangle (-400,1200) (500,800) (-400,400) 0 0 0x1000000 0x2000000 -1 -1»
+      «text (349,1050) 1 15 0 0x1000000 -1 -1 "U9B"»
+      «text (400,550) 1 15 0 0x1000000 -1 -1 "LM2903B"»
+      «pin (-400,1000) (20,0) 1 7 0 0x0 -1 "IN+"»
+      «pin (-400,600) (20,0) 1 7 0 0x0 -1 "IN-"»
+      «pin (0,1200) (20,0) 1 15 0 0x0 -1 "VCC"»
+      «pin (0,400) (20,0) 1 15 0 0x0 -1 "GND"»
+      «pin (500,800) (20,0) 1 7 0 0x0 -1 "OUT"»
+    »
+  »
+  «component (10700,-4400) 0 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "C25"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "1n"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (12800,-4400) 0 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "C26"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "1n"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (16300,-2300) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R18"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "10K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (8800,-4500) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R23"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "10K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (8800,-5500) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R25"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "10K"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (8800,-6500) 0 0
+    «symbol R
+      «type: R»
+      «description: Resistor(USA Style Symbol)»
+      «shorted pins: false»
+      «line (0,200) (0,180) 0 0 0x1000000 -1 -1»
+      «line (0,-180) (0,-200) 0 0 0x1000000 -1 -1»
+      «zigzag (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "R30"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "1k8"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (10200,-6500) 0 0
+    «symbol C
+      «type: C»
+      «description: Capacitor»
+      «shorted pins: false»
+      «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
+      «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
+      «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "C11"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "10n"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (7300,2200) 0 0
+    «symbol Vpwl
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «line (-70,-30) (-20,-30) 0 0 0x1000000 -1 -1»
+      «line (-20,-30) (10,30) 0 0 0x1000000 -1 -1»
+      «line (10,30) (70,30) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "V5"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "PWL(0 0, 1m 0, 1.001m 5, 2m 5, 2.001m 0, 3m 0, 3.001m 5, 4m 5,4.001m 0)"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (5700,1700) 0 0
+    «symbol Vpwl
+      «type: V»
+      «description: Independent Voltage Source»
+      «shorted pins: false»
+      «line (0,-130) (0,-200) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,130) 0 0 0x1000000 -1 -1»
+      «line (-70,-30) (-20,-30) 0 0 0x1000000 -1 -1»
+      «line (-20,-30) (10,30) 0 0 0x1000000 -1 -1»
+      «line (10,30) (70,30) 0 0 0x1000000 -1 -1»
+      «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
+      «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «text (100,150) 1 7 0 0x1000000 -1 -1 "V6"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "PWL(0 0, 1m 0, 1.001n 0, 2m 0, 2.001m 5, 4m 5, 4.001m 5, 5m 5)"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
+    »
+  »
+  «component (8700,-2700) 0 0
+    «symbol OR2_Q
+      «type: ¥»
+      «description: 2-Input NOR gate»
+      «shorted pins: false»
+      «line (400,0) (380,0) 0 0 0x1000000 -1 -1»
+      «line (-200,-200) (-160,-200) 0 0 0x1000000 -1 -1»
+      «line (-200,200) (-160,200) 0 0 0x1000000 -1 -1»
+      «ellipse (300,40) (380,-40) 0 0 0 0x1000000 0x1000000 -1 -1»
+      «arc3p (-200,-300) (300,0) (-100,200) 0 0 0x1000000 -1 -1»
+      «arc3p (300,0) (-200,300) (-100,-200) 0 0 0x1000000 -1 -1»
+      «arc3p (-200,-300) (-200,300) (-800,0) 0 0 0x1000000 -1 -1»
+      «text (200,300) 1 7 0 0x1000000 -1 -1 "¥1"»
+      «text (0,0) 1 0 2 0x1000000 -1 -1 "OR"»
+      «pin (-100,300) (0,0) 1 0 0 0x1000000 -1 "Vdd"»
+      «pin (-100,-300) (0,0) 1 0 0 0x1000000 -1 "Vss"»
+      «pin (200,0) (0,0) 1 0 0 0x1000000 -1 "Q" "¥"»
+      «pin (400,0) (0,0) 1 0 0 0x1000000 -1 "¬Q"»
+      «pin (-200,200) (0,0) 1 0 0 0x1000000 -1 "b0"»
+      «pin (-200,-200) (0,0) 1 0 0 0x1000000 -1 "b1"»
+    »
+  »
+  «net (11800,-5000) 1 13 0 "GND"»
+  «net (16300,-1700) 1 14 0 "5V"»
+  «net (17400,-2900) 1 7 0 "Buffer"»
+  «net (13500,-2100) 1 14 0 "24V"»
+  «net (13500,-3600) 1 13 0 "GND"»
+  «net (11000,-6000) 1 7 0 "Buff_Ref"»
+  «net (8800,-4000) 1 14 0 "5V"»
+  «net (8800,-7000) 1 13 0 "GND"»
+  «net (10000,-1600) 1 13 0 "GND"»
+  «net (12500,-3100) 1 11 0 "Buff_Ref"»
+  «net (6700,-2300) 1 11 0 "Implausiblity"»
+  «net (6500,-3000) 1 11 0 "ShortFault"»
+  «net (8600,-3300) 1 13 0 "GND"»
+  «net (8600,-1100) 1 14 0 "5V"»
+  «net (7300,2400) 1 14 0 "ShortFault"»
+  «net (7300,2000) 1 13 0 "GND"»
+  «net (5700,1900) 1 14 0 "Implausibility"»
+  «net (5700,1500) 1 13 0 "GND"»
+  «junction (16300,-2900)»
+  «junction (11800,-2700)»
+  «junction (11800,-4200)»
+  «junction (11800,-4800)»
+  «junction (10200,-6000)»
+  «junction (9100,-1500)»
+  «junction (8800,-6000)»
+  «junction (8800,-6900)»
+  «junction (8600,-1500)»
+  «wire (11800,-2700) (11200,-2700) "N01"»
+  «wire (13100,-2700) (11800,-2700) "N01"»
+  «wire (11800,-4200) (10700,-4200) "N01"»
+  «wire (11800,-2700) (11800,-4200) "N01"»
+  «wire (12800,-4200) (11800,-4200) "N01"»
+  «wire (10700,-4600) (10700,-4800) "GND"»
+  «wire (11800,-4800) (12800,-4800) "GND"»
+  «wire (12800,-4800) (12800,-4600) "GND"»
+  «wire (11800,-4800) (11800,-5000) "GND"»
+  «wire (10700,-4800) (11800,-4800) "GND"»
+  «wire (16300,-2900) (17400,-2900) "Buffer"»
+  «wire (16300,-2500) (16300,-2900) "Buffer"»
+  «wire (14000,-2900) (16300,-2900) "Buffer"»
+  «wire (16300,-1700) (16300,-2100) "5V"»
+  «wire (13500,-2500) (13500,-2100) "24V"»
+  «wire (13500,-3600) (13500,-3300) "GND"»
+  «wire (8800,-4700) (8800,-5300) "N02"»
+  «wire (8800,-6000) (8800,-6300) "Buff_Ref"»
+  «wire (8800,-6900) (8800,-7000) "GND"»
+  «wire (10200,-6300) (10200,-6000) "Buff_Ref"»
+  «wire (10200,-6000) (8800,-6000) "Buff_Ref"»
+  «wire (8800,-5700) (8800,-6000) "Buff_Ref"»
+  «wire (10200,-6000) (11000,-6000) "Buff_Ref"»
+  «wire (8800,-4300) (8800,-4000) "5V"»
+  «wire (9500,-1500) (10000,-1500) "GND"»
+  «wire (10000,-1500) (10000,-1600) "GND"»
+  «wire (6700,-2300) (7700,-2300) "Implausiblity"»
+  «wire (9100,-1500) (9200,-1500) "5V"»
+  «wire (8600,-1100) (8600,-1500) "5V"»
+  «wire (13100,-3100) (12500,-3100) "Buff_Ref"»
+  «wire (8800,-6900) (10200,-6900) "GND"»
+  «wire (8800,-6700) (8800,-6900) "GND"»
+  «wire (10200,-6900) (10200,-6700) "GND"»
+  «wire (8100,-3000) (6500,-3000) "ShortFault"»
+  «wire (8600,-1500) (9100,-1500) "5V"»
+  «wire (8600,-2400) (8600,-1500) "5V"»
+  «wire (8500,-2500) (7700,-2500) "Implausiblity"»
+  «wire (7700,-2500) (7700,-2300) "Implausiblity"»
+  «wire (8100,-3000) (8100,-2900) "ShortFault"»
+  «wire (8100,-2900) (8500,-2900) "ShortFault"»
+  «wire (8600,-3000) (8600,-3300) "GND"»
+  «wire (9100,-2700) (10800,-2700) "N03"»
+  «rect (5500,-300) (18150,-7350) 0 0 2 0x4000000 0x1000000 -1 0 -1»
+  «text (11450,-500) 1 7 0 0x1000000 -1 -1 "ï»¿;500ms Buffer"»
+  «text (6450,200) 1 7 0 0x1000000 -1 -1 "ï»¿.tran 7ms"»
+»
+
