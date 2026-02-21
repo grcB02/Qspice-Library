@@ -68,6 +68,9 @@
   «wire (-1500,600) (-1000,600) "in"»
   «wire (300,400) (700,400) "out"»
   «wire (-2300,600) (-1500,600) "in"»
+  «rect (-2850,2800) (1500,-1550) 0 0 2 0x4000000 0x1000000 -1 0 -1»
   «text (-1350,2400) 1 7 0 0x1000000 -1 -1 "ï»¿.dc V2 0 5 0.01\n.plot V(out)"»
+  «text (-4000,3400) 2 7 1 0x1000000 -1 -1 "ï»¿Follower Ampop for GPIO MUX of BMS Slave Board"»
+  «text (1930,2350) 1 7 1 0x1000000 -1 -1 "ï»¿Teve-se de substituir o Ampop sugerido pela datasheet pelo mesmo estar em fim de vida de producao.\nAssim sendo, escolheu-se este outro ampop com a mesma footprint.\nAqui esta a confirmaÃ§Ã£o que ele funcionarÃ¡ para inputs no intervalo [0.5; 4.5]V\n\nAlexandre SÃ¡"»
 »
 
