@@ -266,7 +266,7 @@
   «text (-2400,1700) 1 7 0 0x1000000 -1 -1 "ï»¿;Sensor"»
   «text (-850,150) 1 7 0 0x1000000 -1 -1 "ï»¿;Sensor vai de 0 a 5V"»
   «text (-2450,-1650) 1 7 0 0x1000000 -1 -1 "ï»¿;Power Supply"»
-  «text (1700,-1600) 1 7 0 0x1000000 -1 -1 "ï»¿;.step param v_sensor 4.3 4.7 0.01\n.tran 1ms"»
+  «text (1700,-1600) 1 7 0 0x1000000 -1 -1 "ï»¿.step param v_sensor 4.3 4.7 0.01\n.tran 1ms"»
   «text (-550,-1650) 1 7 0 0x1000000 -1 -1 "ï»¿;Switch Control"»
   «text (5200,-1700) 1 7 0 0x1000000 -1 -1 "ï»¿;Se o sensor for por exemplo de 0 a 5V, \n;como nÃ³s temos de verificar short to supply voltage do sensor, que serÃ¡ 5V \n;neste caso, perdemos a possibilidade de medir a tensÃ£o atÃ© aÃ­. Nesse caso, colocar um divisor resistivo."»
 »
